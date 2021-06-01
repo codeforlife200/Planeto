@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="20dp"
+    android:layout_marginBottom="15dp"
+    android:gravity="center_vertical"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/planet_img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:elevation="30dp"
+        android:src="@drawable/ic_earth" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:layout_marginStart="-60dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="@color/secondary"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="80dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Earth"
+                    android:textColor="@color/white"
+                    android:textSize="23sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:src="@android:drawable/ic_menu_sort_by_size" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/galaxy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-7dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Milkyway Galaxy"
+                android:textColor="@color/subtext"
+                android:textSize="12sp" />
+
+            <View
+                android:layout_width="30dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="#03A9F4"
+                android:orientation="vertical" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="23dp"
+                        android:src="@drawable/ic_distance"/>
+                <TextView
+                    android:id="@+id/distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="2dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="54.6m km"
+                    android:textColor="@color/subtext"
+                    android:textSize="12sp"
+                    />
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="23dp"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/ic_gravity"/>
+                <TextView
+                    android:id="@+id/gravity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="3.711 m/ss"
+                    android:textColor="@color/subtext"
+                    android:textSize="12sp"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
